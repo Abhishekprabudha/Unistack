@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniStack Baggage Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"></div><div><h1>UniStack</h1><p>Meta-platform for aviation operations</p></div></div>
+      <div class="nav-section">
+        <p class="nav-title">Experience</p>
+        <a class="nav-link" data-nav href="index.html">Overview <small>01</small></a>
+        <a class="nav-link" data-nav href="ops-hub.html">Ops Hub <small>02</small></a>
+        <a class="nav-link" data-nav href="baggage.html">Baggage <small>03</small></a>
+        <a class="nav-link" data-nav href="cargo.html">Cargo <small>04</small></a>
+        <a class="nav-link" data-nav href="governance.html">Governance <small>05</small></a>
+        <a class="nav-link" data-nav href="builder.html">App Builder <small>06</small></a>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div><div class="kicker">Domain app generated from UniStack</div><h2>Baggage Reconciliation Suite</h2><p>Inbound scans, sortation, transfer risk, and SLA visibility.</p></div>
+        <div class="top-actions"><a class="button" href="ops-hub.html">Back to ops hub</a><a class="button primary" href="builder.html">Clone this app</a></div>
+      </div>
+
+      <section class="grid cols-2">
+        <div class="panel">
+          <h3>Baggage workflow</h3>
+          <div class="flow">
+            <div class="flow-step"><strong>Tag ingestion</strong><span class="footer-note">airline DCS, kiosks, counters</span></div>
+            <div class="flow-step"><strong>Security + screening</strong><span class="footer-note">scan quality and alerts</span></div>
+            <div class="flow-step"><strong>Sortation decision</strong><span class="footer-note">belt, pier, gate, connection</span></div>
+            <div class="flow-step"><strong>Transfer protection</strong><span class="footer-note">tight-connection risk scoring</span></div>
+            <div class="flow-step"><strong>Closure + audit</strong><span class="footer-note">SLA and policy trace</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>AI features built into this page</h3>
+          <div class="stack">
+            <div class="notice">Predict missed connections from transfer windows, belt congestion, and late inbound flights.</div>
+            <div class="notice">Summarize exceptions by root cause: scan gaps, load delays, belt saturation, or transfer risk.</div>
+            <div class="notice">Recommend interventions: rebalance belt assignment, prioritize hot bags, or dispatch recovery teams.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Flight-level baggage performance</h3>
+        <p class="panel-subtitle">Illustrative data reflecting the sort of backend views seen in baggage operations systems.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Flight</th><th>Route</th><th>Status</th><th>Bags screened</th><th>Missed bags</th><th>SLA attainment</th></tr></thead>
+            <tbody id="baggage-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

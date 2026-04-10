@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniStack Prototype | Meta Platform for Aviation Backends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div>
+          <h1>UniStack</h1>
+          <p>Meta-platform for aviation operations</p>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <p class="nav-title">Experience</p>
+        <a class="nav-link" data-nav href="index.html">Overview <small>01</small></a>
+        <a class="nav-link" data-nav href="ops-hub.html">Ops Hub <small>02</small></a>
+        <a class="nav-link" data-nav href="baggage.html">Baggage <small>03</small></a>
+        <a class="nav-link" data-nav href="cargo.html">Cargo <small>04</small></a>
+        <a class="nav-link" data-nav href="governance.html">Governance <small>05</small></a>
+        <a class="nav-link" data-nav href="builder.html">App Builder <small>06</small></a>
+      </div>
+
+      <div class="sidebar-footer">
+        <p>Positioned as the mother of all backend systems: one governed core that can instantly spawn baggage, cargo, turnaround, partner, and airport operating applications.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <div class="kicker">Prototype Storyboard</div>
+          <h2>From one platform, many operational systems</h2>
+          <p>Static HTML prototype designed for GitHub Pages deployment and demo storytelling.</p>
+        </div>
+        <div class="top-actions">
+          <a class="button primary" href="builder.html">Generate a backend</a>
+          <a class="button" href="governance.html">Open governance fabric</a>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="panel hero-panel">
+          <div class="kicker">Meta platform positioning</div>
+          <div class="hero-title">The core stack that creates other stacks.</div>
+          <p class="hero-copy">This prototype frames UniStack as the enterprise backbone for baggage and cargo handling, while also showing how the same core can generate adjacent systems instantly. Each domain app is assembled from reusable workflows, data contracts, policy packs, observability, and governance controls.</p>
+          <div class="badges">
+            <span class="badge">Baggage handling</span>
+            <span class="badge">Cargo handling</span>
+            <span class="badge">Turnaround operations</span>
+            <span class="badge">Partner workspaces</span>
+            <span class="badge">Data governance</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>What this prototype demonstrates</h3>
+          <p class="panel-subtitle">The demo narrative is built to feel like a premium airport operations operating system.</p>
+          <div class="stack">
+            <div class="notice">One command center across flight, bag, cargo, workforce, device, and partner events.</div>
+            <div class="notice">Instant solution generation from templates, APIs, policies, and domain schemas.</div>
+            <div class="notice">Governance-first architecture with lineage, catalog, ownership, retention, and access enforcement.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Platform heartbeat</h3>
+        <p class="panel-subtitle">Live KPI layer for the mother platform.</p>
+        <div class="metrics" id="overview-metrics"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Core product layers</h3>
+        <p class="panel-subtitle">Everything downstream is created from these reusable enterprise building blocks.</p>
+        <div class="cards" id="module-cards"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Instant application factory</h3>
+        <p class="panel-subtitle">Illustrative templates generated from the same UniStack backbone.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Template</th><th>Estimated launch</th><th>Generated building blocks</th></tr>
+            </thead>
+            <tbody id="template-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

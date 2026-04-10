@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniStack Governance Fabric</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"></div><div><h1>UniStack</h1><p>Meta-platform for aviation operations</p></div></div>
+      <div class="nav-section">
+        <p class="nav-title">Experience</p>
+        <a class="nav-link" data-nav href="index.html">Overview <small>01</small></a>
+        <a class="nav-link" data-nav href="ops-hub.html">Ops Hub <small>02</small></a>
+        <a class="nav-link" data-nav href="baggage.html">Baggage <small>03</small></a>
+        <a class="nav-link" data-nav href="cargo.html">Cargo <small>04</small></a>
+        <a class="nav-link" data-nav href="governance.html">Governance <small>05</small></a>
+        <a class="nav-link" data-nav href="builder.html">App Builder <small>06</small></a>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div><div class="kicker">Governance feature inspired by UniStack positioning</div><h2>Data Governance Fabric</h2><p>Policy, lineage, ownership, access, retention, and replay for every operational event.</p></div>
+        <div class="top-actions"><a class="button" href="ops-hub.html">See governed flows</a><a class="button primary" href="builder.html">Generate governed app</a></div>
+      </div>
+
+      <section class="grid cols-2">
+        <div class="panel">
+          <h3>What this governance feature does</h3>
+          <div class="risk-grid">
+            <div class="risk-item"><h4>Catalog every domain</h4><p>Bag journeys, AWB flows, IoT feeds, workforce logs, and model outputs are registered under named owners and classifications.</p></div>
+            <div class="risk-item"><h4>Trace every decision</h4><p>Users can inspect how a bag or shipment event moved through ingest, rule execution, model scoring, and human intervention.</p></div>
+            <div class="risk-item"><h4>Enforce policy automatically</h4><p>Mask sensitive fields, restrict role access, retain records by policy, and track exceptions for audit.</p></div>
+            <div class="risk-item"><h4>Operationalize trust</h4><p>The same governance layer can be inherited by every app generated from UniStack.</p></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Lineage example</h3>
+          <p class="panel-subtitle">A governed path from raw event to operational closure.</p>
+          <div class="flow" id="lineage-flow"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Governed data domains</h3>
+        <p class="panel-subtitle">Illustrative records showing ownership, sensitivity, and coverage.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Domain</th><th>Owner</th><th>Classification</th><th>Policy coverage</th><th>Open issues</th></tr></thead>
+            <tbody id="governance-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

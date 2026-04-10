@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniStack App Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"></div><div><h1>UniStack</h1><p>Meta-platform for aviation operations</p></div></div>
+      <div class="nav-section">
+        <p class="nav-title">Experience</p>
+        <a class="nav-link" data-nav href="index.html">Overview <small>01</small></a>
+        <a class="nav-link" data-nav href="ops-hub.html">Ops Hub <small>02</small></a>
+        <a class="nav-link" data-nav href="baggage.html">Baggage <small>03</small></a>
+        <a class="nav-link" data-nav href="cargo.html">Cargo <small>04</small></a>
+        <a class="nav-link" data-nav href="governance.html">Governance <small>05</small></a>
+        <a class="nav-link" data-nav href="builder.html">App Builder <small>06</small></a>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div><div class="kicker">Instant system creation</div><h2>UniStack App Builder</h2><p>Create baggage, cargo, turnaround, or partner systems from one governed backbone.</p></div>
+        <div class="top-actions"><a class="button" href="index.html">Overview</a><button class="button primary" id="generate-app">Generate backend JSON</button></div>
+      </div>
+
+      <section class="grid cols-2">
+        <div class="panel">
+          <h3>Build a new operational backend</h3>
+          <p class="panel-subtitle">This page demonstrates the product story: UniStack can spawn many systems quickly by combining templates, policies, and integrations.</p>
+          <form id="builder-form" class="stack">
+            <div class="form-grid">
+              <label>
+                <div class="footer-note">Solution name</div>
+                <input name="appName" value="Airport Partner Control Tower" />
+              </label>
+              <label>
+                <div class="footer-note">Template</div>
+                <select name="template">
+                  <option>Baggage Reconciliation Suite</option>
+                  <option selected>Cargo Hub Control Tower</option>
+                  <option>Turnaround Orchestrator</option>
+                  <option>Partner Audit Workspace</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-grid">
+              <label>
+                <div class="footer-note">Target domain</div>
+                <input name="domain" value="cargo + partner operations" />
+              </label>
+              <label>
+                <div class="footer-note">Connected systems</div>
+                <input name="systems" value="DCS, WMS, ULD planner, security screening, workforce dispatch" />
+              </label>
+            </div>
+            <label>
+              <div class="footer-note">Inherited policies</div>
+              <input name="policies" value="PII masking, retention-180d, restricted-cargo-access, partner-audit-trace" />
+            </label>
+          </form>
+        </div>
+        <div class="panel">
+          <h3>Generated output</h3>
+          <p class="panel-subtitle">Example of a machine-readable configuration that the mother platform could emit.</p>
+          <div class="codebox" id="generated-output"></div>
+          <p class="footer-note">In a real product, this could trigger workflow provisioning, schema creation, policy attachment, and UI generation.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

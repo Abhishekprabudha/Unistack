@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniStack Cargo Control Tower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"></div><div><h1>UniStack</h1><p>Meta-platform for aviation operations</p></div></div>
+      <div class="nav-section">
+        <p class="nav-title">Experience</p>
+        <a class="nav-link" data-nav href="index.html">Overview <small>01</small></a>
+        <a class="nav-link" data-nav href="ops-hub.html">Ops Hub <small>02</small></a>
+        <a class="nav-link" data-nav href="baggage.html">Baggage <small>03</small></a>
+        <a class="nav-link" data-nav href="cargo.html">Cargo <small>04</small></a>
+        <a class="nav-link" data-nav href="governance.html">Governance <small>05</small></a>
+        <a class="nav-link" data-nav href="builder.html">App Builder <small>06</small></a>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div><div class="kicker">Domain app generated from UniStack</div><h2>Cargo Hub Control Tower</h2><p>AWB orchestration, dock operations, ULD build, and shipment visibility.</p></div>
+        <div class="top-actions"><a class="button" href="ops-hub.html">Back to ops hub</a><a class="button primary" href="builder.html">Clone this app</a></div>
+      </div>
+
+      <section class="grid cols-2">
+        <div class="panel">
+          <h3>Cargo backend capabilities</h3>
+          <div class="cards" style="grid-template-columns:1fr 1fr;">
+            <div class="card"><h4>Shipment search</h4><p>Track every AWB across acceptance, security, build, and flight readiness.</p></div>
+            <div class="card"><h4>Dock and staging</h4><p>Coordinate doors, screening, and build zones with rule-driven priorities.</p></div>
+            <div class="card"><h4>ULD build assistant</h4><p>Combine weight, priority, destination, and aircraft constraints to guide build order.</p></div>
+            <div class="card"><h4>Exception management</h4><p>Spot missing docs, compliance holds, cold-chain deviations, and late cut-offs.</p></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>AI features built into this page</h3>
+          <div class="stack">
+            <div class="notice">Predict ULD build delays from inbound waves, dock occupancy, and staffing mismatch.</div>
+            <div class="notice">Prioritize cargo using SLA, commodity sensitivity, and flight commitment.</div>
+            <div class="notice">Auto-surface explainable exceptions for security hold, weight mismatch, or documentation risk.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Illustrative cargo queue</h3>
+        <p class="panel-subtitle">Modeled to reflect cargo operations backends with AWB, commodity, stage, and priority context.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>AWB</th><th>Commodity</th><th>Flight</th><th>Priority</th><th>Stage</th><th>Weight kg</th></tr></thead>
+            <tbody id="cargo-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
