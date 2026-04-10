@@ -1,0 +1,73 @@
+{
+  "platformMetrics": {
+    "activeFlights": 212,
+    "cargoAwbs": 1486,
+    "baggageEventsPerMin": 18472,
+    "policyCoverage": 97
+  },
+  "modules": [
+    {
+      "name": "Ops Command Center",
+      "description": "Unified operational view across baggage, cargo, turnaround, workforce, and partner systems.",
+      "capabilities": ["Live disruptions", "SLA heatmaps", "AI exception summaries"]
+    },
+    {
+      "name": "Process Composer",
+      "description": "Generate and customize backend applications instantly from reusable workflows, data contracts, and policy blocks.",
+      "capabilities": ["Template cloning", "Rule packs", "Low-code journey builder"]
+    },
+    {
+      "name": "Data Governance Fabric",
+      "description": "Catalog, lineage, access control, policy enforcement, and retention for every event, document, API, and model output.",
+      "capabilities": ["Lineage graph", "PII masking", "Access attestations"]
+    }
+  ],
+  "baggageFlights": [
+    {"flight": "CM 312", "route": "PTY → MIA", "status": "On Track", "screened": 428, "missed": 2, "sla": 98},
+    {"flight": "CM 417", "route": "PTY → JFK", "status": "Tight Connection", "screened": 511, "missed": 11, "sla": 93},
+    {"flight": "CM 203", "route": "BOG → PTY", "status": "On Track", "screened": 301, "missed": 1, "sla": 99},
+    {"flight": "CM 881", "route": "PTY → LIM", "status": "Late Inbound", "screened": 356, "missed": 7, "sla": 95}
+  ],
+  "cargoLoads": [
+    {"awb": "230-44381275", "commodity": "Pharma", "flight": "CM 431", "priority": "Critical", "stage": "Ready for Build", "weightKg": 2040},
+    {"awb": "230-99813761", "commodity": "Fresh Produce", "flight": "CM 205", "priority": "High", "stage": "Dock Check-in", "weightKg": 1128},
+    {"awb": "230-11327745", "commodity": "eCommerce", "flight": "CM 701", "priority": "Standard", "stage": "ULD Packed", "weightKg": 894},
+    {"awb": "230-88541220", "commodity": "Spare Parts", "flight": "CM 121", "priority": "High", "stage": "Security Hold", "weightKg": 1372}
+  ],
+  "governance": [
+    {"domain": "Bag Journey Events", "owner": "Airport Ops", "classification": "Internal", "coverage": 99, "issues": 1},
+    {"domain": "Cargo AWB & Manifests", "owner": "Cargo Ops", "classification": "Restricted", "coverage": 96, "issues": 3},
+    {"domain": "CCTV + IoT Feeds", "owner": "Security", "classification": "Sensitive", "coverage": 92, "issues": 6},
+    {"domain": "Crew & Workforce Logs", "owner": "Ground Handling", "classification": "Confidential", "coverage": 95, "issues": 2}
+  ],
+  "builderTemplates": [
+    {
+      "name": "Baggage Reconciliation Suite",
+      "time": "18 min",
+      "components": "bag tag ingest, reconciliation rules, scan SLA dashboard"
+    },
+    {
+      "name": "Cargo Hub Control Tower",
+      "time": "24 min",
+      "components": "awb workflow, dock scheduling, uld build optimization"
+    },
+    {
+      "name": "Turnaround Orchestrator",
+      "time": "14 min",
+      "components": "gate tasks, deviation alerts, team dispatch"
+    },
+    {
+      "name": "Partner Audit Workspace",
+      "time": "11 min",
+      "components": "policy packs, access logs, lineage explorer"
+    }
+  ],
+  "lineage": [
+    "RFID bag scan",
+    "Conveyor PLC signal",
+    "Sortation decision",
+    "Exception model",
+    "Ops action ticket",
+    "SLA closure"
+  ]
+}
